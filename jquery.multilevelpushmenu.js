@@ -1109,14 +1109,8 @@
 				return check;
 			}
 
-			if( mobileCheck() ) {
-				clickEventType = 'touchend';
-				dragEventType = 'touchmove';
-			}
-			else {
-				clickEventType = 'click';
-				dragEventType = 'mousedown';
-			}
+			clickEventType = 'click';
+			dragEventType = 'mousedown';
 
 			// Invoke called method or init
 			if ( methods[options] ) {
